@@ -1,0 +1,11 @@
+$ sudo apt update
+$ sudo apt upgrade
+$ wget https://raw.githubusercontent.com/Angristan/openvpn-install/master/openvpn-install.sh -O debian10-vpn.sh
+$ chmod +x debian10-vpn.sh
+$ sudo ./debian10-vpn.sh
+
+How do I start/stop/restart OpenVPN server on Debian 10 ?
+$ sudo systemctl stop openvpn@server # <--- stop server
+$ sudo systemctl start openvpn@server # <--- start server
+$ sudo systemctl restart openvpn@server # <--- restart server
+$ sudo systemctl status openvpn@server # <--- get server status
